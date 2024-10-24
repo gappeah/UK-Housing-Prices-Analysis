@@ -11,15 +11,11 @@ This project aims to analyze UK house prices from 1995 onwards, incorporating el
 
 ---
 
-## **Proposed Technology Stack**
+## **Technology Stack**
 
-To handle large datasets efficiently and ensure robust analysis, we propose the following technology stack:
+To handle large datasets efficiently and ensure robust analysis, I utilsed  **Polars**, and **Pandas**
 
-### **1. Data Integration and Engineering:**
-- **Apache Spark (PySpark)**: Primary tool for merging and managing the large datasets. Apache Spark is selected for its ability to handle large-scale data processing in a distributed manner, which makes it an ideal choice for managing and processing millions of rows across multiple CSV files.
-  
-  > Spark is a key tool to demonstrate the ability to work with **big data** frameworks and distributed computing.
-
+### **1. Data Integration and Engineering:** 
 - **Polars**: Although Apache Spark will manage most of the large data processing, **Polars** may be used for initial explorations, data validation, and rapid manipulations. Polars is known for its fast execution and lower memory consumption on single-node environments.
 
 - **Pandas**: While considered less likely due to its memory limitations, **Pandas** will still be explored for smaller data manipulations and exploratory data analysis (EDA) where applicable.
@@ -39,9 +35,9 @@ To handle large datasets efficiently and ensure robust analysis, we propose the 
 ## **Project Phases**
 
 ### **Phase 1: Data Engineering**
-- **Data Loading**: Extract CSV files containing house price data from 1995 onwards.
+- **Data Loading**: Extract CSV files containing house price data from 1995 and 2013.
 - **Data Cleaning & Preprocessing**: Handle missing values, standardize column formats, and normalize data for merging.
-- **Merging Datasets**: Using PySpark (or Polars/Pandas where applicable), merge datasets based on a unique identifier (e.g., house ID), creating a single, comprehensive database for analysis.
+- **Merging Datasets**: Using Polarss where applicable, merge datasets based on a unique identifier (e.g., house ID), creating a single, comprehensive database for analysis.
   
 ### **Phase 2: Exploratory Data Analysis (EDA)**
 - **Correlation Analysis**: Use Seaborn to visualize correlations between house prices and variables such as geographic area, property type, and tenure.
